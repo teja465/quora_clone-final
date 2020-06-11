@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+{% extends 'base.html'%}
+{% block detailQuestion%}
+
+
+<div class="qa">
+  <a href="http://127.0.0.1:8000/" class="btn btn-outline-secondary">home</a>
+
+<h1> {{question.question}} </h1>
+<p> &emsp;&emsp;
+  <div class="aut_date">
+
+
+  requested by {{question.author}} on {{question.date}}
+    </div>
+</p>
+<div class="striped-border">
+
+</div>
+
+{%if answers%}
+
+
+    {% for answer in answers %}
+        <div class="ans_date">
+
+
+          <div class="answer_date_individual">  <p> Answered on {{answer.date}}</p>
+
+          </div>
+
+      <h5>{{answer.answer}}</h5>
+        </div>
+      <div class="striped-border">
+
+      </div>
+      <br>
+    {% endfor%}
+
+      <a href="http://127.0.0.1:8000/" class="btn btn-outline-secondary">go to home</a>
+      <h1>{{question.question}}</h1>
+      <br><a href="http://127.0.0.1:8000/answer/{{question.id}}" class="btn btn-primary">Answer this question</a>
+
+  {% else%}
+  <h3>No one answered this question
+    be the first to answer</h3>
+<a href="http://127.0.0.1:8000/answer/{{question.id}}" class="btn btn-primary">Answer this question</a>
+    <a href="answer/{{question.id}}"></a>
+  {% endif%}
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

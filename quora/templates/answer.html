@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+
+{% block ask_block%}
+<div class="qn_form">
+  <h3>in answer file</h3>
+  <h2>{{question.title}}</h2>
+
+
+
+<form method="post">
+
+  {% csrf_token%}
+  <textarea id="w3review" name="answer" rows="20" cols="90">
+
+  </textarea>
+
+
+  <input type="submit" name="" value="submit ">
+
+</form>
+</div>
+
+{% endblock %}

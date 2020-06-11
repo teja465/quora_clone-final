@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+
+{% block signup_page%}
+
+<h3>signup form</h3>
+<div class="sup_form">
+
+
+<form  method="post">
+
+{% csrf_token%}
+{{form.as_p}}
+<p>
+Your password must contain at least 8 characters.<br>
+Your password can’t be entirely numeric.</p>
+
+<!--
+{% if profile%}
+      {{profile.as_p}}
+{% else%}
+
+      <h3>no profile form found</h3>
+{% endif%}
+-->
+
+
+
+
+Bio:&nbsp;&nbsp;<input type="text" name="bio" value=""><br><br>
+Email:&nbsp;&nbsp;<input type="text" name="email" value=""><br><br>
+College:&nbsp;&nbsp;<input type="text" name="college" value=""><br><br>
+Profession:&nbsp;&nbsp;<input type="text" name="profession" value=""><br><br><br>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="" value="submit">
+</form>
+</div>
+{% endblock%}

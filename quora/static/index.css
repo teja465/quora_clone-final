@@ -1,0 +1,83 @@
+.content{
+  float:left;
+  padding: 0 0 0 15px;
+
+
+  width: 70%
+}
+.sidebar{
+  float:right;
+  padding: 10px 10px 0 9px ;
+  width: 25%;
+  background-color: #cccccc;
+}
+.spacing_div{
+
+  padding-bottom: 520px;
+}
+
+
+ .striped-border {
+    border: 1px dashed #000;  margin: auto;
+  margin-top:0%; margin-bottom: 0%; }
+.qa{
+  float:left;
+  padding: 10px 10px 0 150px ;
+  width: 79%;
+
+
+
+
+}
+.aut_date{
+  color:blue;
+
+
+
+
+}
+.ans_date{
+
+  background-color: WhiteSmoke;
+
+}
+
+.answer_date_individual{
+
+  color:DarkRed;
+}
+
+
+
+
+.qn_form{
+  background-color: #f0f0f0;
+  float:left;
+  width:40%;
+  padding:30px 30px 30px 150px ;
+}
+.userProfile{
+  float:left;
+  width:60%;
+  padding:30px 30px 30px 150px ;
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
+.login_form{
+  float:left;
+  width:40%;
+    background-color: #f0f0f0;
+  padding:30px 100px 10px 150px ;
+
+}
+.sup_form{
+  background-color: #f0f0f0;
+  float:left;
+  width:90%;
+  padding:30px 30px 1px 150px ;
+  font-weight: bold;

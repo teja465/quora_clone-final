@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+{% extends 'base.html'%}
+
+{% block content%}
+<div class="content">
+  <p>questions will be displayed here</p>
+
+  {% for question in questions%}
+
+  <div class="question_heading">
+
+    <h2> <a href="detail/{{question.id}}">{{question.question}}&nbsp;<a href="http://127.0.0.1:8000/answer/{{question.id}}" class='btn'>answer</a> </a> </h2>
+    <p>requested by <a href="http://127.0.0.1:8000/profile/{{question.author.id}}" >{{question.author}}</a> on {{question.date}} {{question.author.id}}
+    </p>
+
+
+
+  </div>
+  {% endfor%}
+
+<!-- ###############################################################-->
+
+
+<div class="answers">
+
+
+</div>
+
+</div>
+
+{% endblock%}
+
+
+
+{% block sidebar%}
+<div class="sidebar">
+  <h5>any important notifications will be displaye here in futute</h5>
+  <br><br>
+<h3>Notice</h3>
+  <a href="http://127.0.0.1:8000/ask/" class="btn btn-success">Ask question</a>
+
+  <br><br><br>
+  <h3> username and  password for  wrinting answers or asking qns: &nbsp;asdf@123</h3>
+  <h4><a href="http://127.0.0.1:8000/admin/">first login here </a> to start exploring site</h4>
+  <br><br><br>
+<p>Notice:- site is still under developmet working on front end currentlly any one can answer any question and ask any question without being logging in.
+
+</p>
+<div class="spacing_div">
+
+</div>
+
+</div>
+{% endblock%}

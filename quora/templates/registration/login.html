@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+
+{% block login_page_block%}
+<h4>Login to ask question or answer question</h4>
+<br><br>
+<div class="login_form">
+
+
+<form  method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+
+  <input type="submit" name="" value="login">
+
+</form>
+
+
+<table>
+  <th>
+
+  </th>
+
+  <tbody>
+    <tr>
+      <td> <a href="http://127.0.0.1:8000/signup/">signup</a></td>
+      <td> &nbsp;here incase you dont</td>
+      <td>&nbsp;have </td>
+      <td> a/c </td>
+
+    </tr>
+  </tbody>
+</table>
+
+{% endblock%}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+
+    <link rel="stylesheet" href="{% static "index.css"%}">
+     <link rel="stylesheet" href="{% static "bootstrap.css"%}">
+    <meta charset="utf-8">
+    <title>home page</title>
+  </head>
+  <body>
+
+
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/" >teja465</a>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+      <input  type="text" placeholder="Search questions...">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://127.0.0.1:8000/" class="btn btn-outline-secondary">home</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+  <a href="http://127.0.0.1:8000/ask/">Ask_question?</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="nav-link" href="http://127.0.0.1:8000/accounts/login">login</a>
+      <a class="nav-link" href="http://127.0.0.1:8000/accounts/logout/">Logout</a>
+      <a class="nav-link" href="http://127.0.0.1:8000/signup/">signup</a>
+      ...
+    </nav>
+
+{%  block content %}
+
+
+{% endblock%}
+
+
+<!--#################################################################################################################-->
+{%  block sidebar %}
+
+
+{% endblock%}
+
+
+{% block detailQuestion%}
+{% endblock %}
+
+
+
+{% block ask_block%}
+
+{% endblock%}
+
+
+{% block profile_block%}
+{% endblock%}
+
+
+{% block login_page_block%}
+{% endblock%}
+
+{% block signup_page%}
+{% endblock%}
+
+
+
+
+
+
+
+  </body>
+</html>

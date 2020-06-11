@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+
+{% block ask_block%}
+<div class="qn_form">
+
+
+<form method="post">
+
+  {% csrf_token%}
+  <h3>Ask  question here..</h3>
+
+
+  <textarea id="w3review" name="question" rows="6" cols="90">
+   </textarea>
+
+
+  <input type="submit" name="" value="submit ">
+
+</form>
+</div>
+
+{% endblock %}
